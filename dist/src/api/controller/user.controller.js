@@ -1,0 +1,22 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.userController = void 0;
+const express_1 = require("express");
+const isAuthenticated_1 = require("../middlewares/isAuthenticated");
+const middlewares_1 = require("../middlewares/middlewares");
+const user_service_1 = require("../service/user.service");
+exports.userController = (0, express_1.Router)();
+exports.userController.post('/test-host', (0, middlewares_1.checkRequiredfields)(['ip', 'port', 'protocol']), user_service_1.testHost);
+exports.userController.post('/login', (0, middlewares_1.checkRequiredfields)(['password']), user_service_1.loginUser);
+exports.userController.get('/profile', (0, middlewares_1.checkRequiredHeaders)(['authorization']), isAuthenticated_1.isAuthenticated, user_service_1.getUser);
+exports.userController.delete('/logout', (0, middlewares_1.checkRequiredHeaders)(['authorization']), isAuthenticated_1.isAuthenticated, user_service_1.logoutUser);
+exports.userController.get('/basic-info', (0, middlewares_1.checkRequiredHeaders)(['authorization']), isAuthenticated_1.isAuthenticated, user_service_1.basicInfo);
+exports.userController.get('/fs', (0, middlewares_1.checkRequiredQueries)(['hidden']), (0, middlewares_1.checkRequiredHeaders)(['authorization']), isAuthenticated_1.isAuthenticated, user_service_1.readDir);
+exports.userController.post('/fs/folder', (0, middlewares_1.checkRequiredQueries)(['path', 'folderName']), (0, middlewares_1.checkRequiredHeaders)(['authorization']), isAuthenticated_1.isAuthenticated, user_service_1.createFolder);
+exports.userController.delete('/fs', (0, middlewares_1.checkRequiredQueries)(['path']), (0, middlewares_1.checkRequiredHeaders)(['authorization']), isAuthenticated_1.isAuthenticated, user_service_1.deleteEntity);
+exports.userController.post('/fs/file', (0, middlewares_1.checkRequiredQueries)(['path', 'fileName']), (0, middlewares_1.checkRequiredfields)(['data']), (0, middlewares_1.checkRequiredHeaders)(['authorization']), isAuthenticated_1.isAuthenticated, user_service_1.createFile);
+exports.userController.get('/fs/file', (0, middlewares_1.checkRequiredQueries)(['path']), (0, middlewares_1.checkRequiredHeaders)(['authorization']), isAuthenticated_1.isAuthenticated, user_service_1.readFile);
+exports.userController.post('/fs/copy', (0, middlewares_1.checkRequiredQueries)(['source', 'destination']), (0, middlewares_1.checkRequiredHeaders)(['authorization']), isAuthenticated_1.isAuthenticated, user_service_1.copyEntity);
+exports.userController.post('/fs/rename', (0, middlewares_1.checkRequiredQueries)(['path', 'newName']), (0, middlewares_1.checkRequiredHeaders)(['authorization']), isAuthenticated_1.isAuthenticated, user_service_1.rename);
+exports.userController.post('/fs/move', (0, middlewares_1.checkRequiredQueries)(['source', 'destination']), (0, middlewares_1.checkRequiredHeaders)(['authorization']), isAuthenticated_1.isAuthenticated, user_service_1.move);
+//# sourceMappingURL=user.controller.js.map

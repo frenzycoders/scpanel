@@ -1,0 +1,54 @@
+{
+    "name": "scpanel",
+    "license": "MIT",
+    "main": "dist/index.js",
+    "type": "dist/index.d.ts",
+    "version": "0.1.19",
+    "bin": {
+        "scpanel": "dist/index.js"
+    },
+    "devDependencies": {
+        "@types/bcryptjs": "^2.4.2",
+        "@types/chalk": "^2.2.0",
+        "@types/cli-spinner": "^0.2.1",
+        "@types/cors": "^2.8.12",
+        "@types/dotenv": "^8.2.0",
+        "@types/express": "^4.17.13",
+        "@types/fs-extra": "^9.0.13",
+        "@types/graceful-fs": "^4.1.5",
+        "@types/jsonwebtoken": "^8.5.8",
+        "@types/node": "16.11.19",
+        "@types/readline-sync": "^1.4.4",
+        "ts-node": "10.4.0",
+        "typescript": "4.5.4"
+    },
+    "scripts": {
+        "dev": "nodemon  ./src/server.ts",
+        "start": "tsc && node dist/src/server.js",
+        "build": "rm -rf dist && tsc && cp -r assets ./dist/ && cp .env ./dist/"
+    },
+    "dependencies": {
+        "axios": "^0.25.0",
+        "bcryptjs": "^2.4.3",
+        "chalk": "^3.0.0",
+        "check-disk-space": "^3.2.0",
+        "cli-spinner": "^0.2.10",
+        "cli-table3": "^0.6.1",
+        "cors": "^2.8.5",
+        "dotenv": "^14.3.2",
+        "express": "^4.17.2",
+        "fs-extra": "^10.0.0",
+        "graceful-fs": "^4.2.9",
+        "jsonwebtoken": "^8.5.1",
+        "pm2": "^5.1.2",
+        "readline-sync": "^1.4.10",
+        "sqlite3": "^5.0.2",
+        "typeorm": "^0.2.41"
+    },
+    "licenses": [
+        "MIT"
+    ],
+    "engines": {
+        "node": ">=12.2.0"
+    }
+}
