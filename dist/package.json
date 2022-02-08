@@ -3,7 +3,8 @@
     "license": "MIT",
     "main": "dist/index.js",
     "type": "dist/index.d.ts",
-    "version": "0.1.19",
+    "version": "0.1.21",
+    "homepage": "http://scpanel.bytecodes.club",
     "bin": {
         "scpanel": "dist/index.js"
     },
@@ -45,10 +46,22 @@
         "sqlite3": "^5.0.2",
         "typeorm": "^0.2.41"
     },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ByteCodes-Club/scpanel/"
+    },
     "licenses": [
         "MIT"
     ],
     "engines": {
         "node": ">=12.2.0"
-    }
+    },
+    "keywords": [
+        "scpanel",
+        "hosting",
+        "pm2",
+        "typescript",
+        "file manager",
+        "code editor"
+    ]
 }
