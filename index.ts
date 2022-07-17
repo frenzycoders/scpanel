@@ -54,7 +54,7 @@ export const setupServer = async () => {
             spinner.stop(true);
             log(chalk.green('> [OK] :') + chalk.gray('user with name ') + chalk.bold.green(createdUser?.name) + chalk.gray(' and email ') + chalk.bold.green(createdUser?.email) + chalk.gray(' is created.'));
             log(chalk.yellow('> now you can access your server using scpanel web/mobile/desktop from anywere and anytime'));
-            log(chalk.bold.gray('> Click here to login: ') + chalk.bold.green('https://scpanel.bytecodes.club'));
+            log(chalk.bold.gray('> Click here to login: ') + chalk.bold.green('https://scpanel.myportfolio.club'));
             logUser(createdUser);
         } else {
             logUser(user);

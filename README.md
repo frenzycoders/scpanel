@@ -1,13 +1,13 @@
 
-![Logo](http://utils.bytecodes.club/scpanel.png)
+![Logo](http://utils.myportfolio.club/scpanel.png)
 
 
 ## Screenshots
 
-![App Screenshot](http://utils.bytecodes.club/scpanel1.png)
-![App Screenshot](http://utils.bytecodes.club/scpanel2.png)
-![App Screenshot](http://utils.bytecodes.club/scpanel3.png)
-![App Screenshot](http://utils.bytecodes.club/scpanel4.png)
+![App Screenshot](http://utils.myportfolio.club/scpanel1.png)
+![App Screenshot](http://utils.myportfolio.club/scpanel2.png)
+![App Screenshot](http://utils.myportfolio.club/scpanel3.png)
+![App Screenshot](http://utils.myportfolio.club/scpanel4.png)
 
 
 ## Installation
@@ -26,7 +26,7 @@ To setup this package run
 ```bash
   scpanel setup
 ```
-After setup complete go to [http://scpanel.bytecodes.club](http://scpanel.bytecodes.club) and perform login with your id and password.
+After setup complete go to [http://scpanel.myportfolio.club](http://scpanel.myportfolio.club) and perform login with your id and password.
 
 ## Features
 
@@ -88,5 +88,5 @@ For more run
 
 Here are some related projects
 source code of user-interface scpanel_ui this project used as client-side of scpanel
-[scpanel_ui](https://github.com/ByteCodes-Club/scpanel_ui)
+[scpanel_ui](https://github.com/frenzycoders/scpanel_ui)
 

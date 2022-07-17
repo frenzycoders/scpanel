@@ -3,10 +3,11 @@
     "license": "MIT",
     "main": "dist/index.js",
     "type": "dist/index.d.ts",
-    "version": "0.1.21",
+    "version": "0.1.22",
     "homepage": "http://scpanel.bytecodes.club",
     "bin": {
-        "scpanel": "dist/index.js"
+        "scpanel": "dist/index.js",
+        "lpca": "dist/lpca/index.js"
     },
     "devDependencies": {
         "@types/bcryptjs": "^2.4.2",
@@ -32,7 +33,6 @@
         "axios": "^0.25.0",
         "bcryptjs": "^2.4.3",
         "chalk": "^3.0.0",
-        "check-disk-space": "^3.2.0",
         "cli-spinner": "^0.2.10",
         "cli-table3": "^0.6.1",
         "cors": "^2.8.5",
