@@ -4,10 +4,13 @@
 
 ## Screenshots
 
-![App Screenshot](http://utils.myportfolio.club/scpanel1.png)
-![App Screenshot](http://utils.myportfolio.club/scpanel2.png)
-![App Screenshot](http://utils.myportfolio.club/scpanel3.png)
-![App Screenshot](http://utils.myportfolio.club/scpanel4.png)
+Demo Screen 1                                    |  Demo Screen 1             
+:-----------------------------------------------:|:---------------------------------------------------:
+![](http://utils.myportfolio.club/scpanel1.png)  |  ![](http://utils.myportfolio.club/scpanel2.png)  
+
+Demo Screen 3                                    |  Demo Screen 4             
+:-----------------------------------------------:|:---------------------------------------------------:
+![](http://utils.myportfolio.club/scpanel3.png)  |  ![](http://utils.myportfolio.club/scpanel4.png) 
 
 
 ## Installation
